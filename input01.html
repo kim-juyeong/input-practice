@@ -4,26 +4,30 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+
+    <link rel='stylesheet', href='./css/input01.css'/>
 </head>
 <body>
-
+    
     <form action='./submit.html'>
+        <div class='idpw'>
+            <input type='text' name='userid' placeholder='아이디 입력'/>
+        </div>
 
-        <input type='text' name='userid' placeholder='아이디 입력'/>
-        <br/>
-        <input type='password' name='userpw' placeholder='비번 입력'/>
-        <br/>
-        <br/>
+        <div class='idpw'>
+            <input type='password' name='userpw' placeholder='비번 입력'/>
+        </div>
 
-        <label for='check_pw'>비밀번호 확인 질문: </label>
-        <select id='check' name='check_pw'>
-            <option>질문을 선택해주세요</option>
-            <option value='q1'>가장 좋아하는 여행지는</option>
-            <option value='q2'>가장 좋아하는 책은</option>
-            <option value='q3'>첫사랑은</option>
-        </select>
-
-        <input type='text' placeholder='답변'/>
+        <div id='qz'>
+            <label for='check_pw'>비밀번호 확인 질문: </label>
+            <select id='check' name='check_pw'>
+                <option>질문을 선택해주세요</option>
+                <option value='q1'>가장 좋아하는 여행지는</option>
+                <option value='q2'>가장 좋아하는 책은</option>
+                <option value='q3'>첫사랑은</option>
+            </select>
+            <input type='text' placeholder='답변'/>
+        </div>
         <br/>
         <br/>
 
